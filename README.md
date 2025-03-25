@@ -1,17 +1,46 @@
 # MCP Calculate Server
 
-A Python-based server for calculating mathematical expressions using `mcp` and `sympy`.
+A mathematical calculation service based on MCP protocol and SymPy library, providing powerful symbolic computation capabilities.
 
-## Prerequisites
+## Key Features
 
-- Python >= 3.11
-- Docker (optional, for containerized deployment)
+- **Basic Operations**: Addition, subtraction, multiplication, division, exponentiation
+- **Algebraic Operations**: Expression expansion, factorization, simplification
+- **Calculus**: Differentiation, integration (definite/indefinite), limit calculation
+- **Equation Solving**: Algebraic equations, systems of equations
+- **Matrix Operations**: Matrix inversion, eigenvalues/eigenvectors calculation
+- **Series Expansion**: Taylor series expansion
+- **Special Functions**: Trigonometric, logarithmic, exponential functions
+
+## Usage Examples
+
+```python
+# Basic operations
+"2 + 3*5" → 17
+
+# Algebraic operations
+"expand((x + 1)**2)" → x² + 2x + 1
+"factor(x**2 - 2*x - 15)" → (x - 5)(x + 3)
+
+# Calculus
+"diff(sin(x), x)" → cos(x)
+"integrate(exp(x), (x, 0, 1))" → E - 1
+"limit(tan(x)/x, x, 0)" → 1
+
+# Equation solving
+"solve(x**2 - 4, x)" → [-2, 2]
+"solve([x**2 + y**2 - 1, x + y - 1], [x, y])" → [(0, 1), (1, 0)]
+
+# Matrix operations
+"Matrix([[1, 2], [3, 4]]).inv()" → [[-2, 1], [3/2, -1/2]]
+"Matrix([[1, 2, 3], [4, 5, 6]]).eigenvals()" → {9/2 - sqrt(33)/2: 1, 9/2 + sqrt(33)/2: 1}
+```
 
 ## Installation
 
 ### Local Installation
 
-1. Clone the repository:
+1. Clone repository:
    ```bash
    git clone https://github.com/611711Dark/mcp-calculate-server.git
    cd mcp-calculate-server
@@ -38,6 +67,9 @@ A Python-based server for calculating mathematical expressions using `mcp` and `
     }
    ```
 
+## API Usage
+
+Call `calculate_expression` tool via MCP protocol by passing mathematical expression string, returns computation result.
 
 ## Dependencies
 
@@ -48,4 +80,6 @@ A Python-based server for calculating mathematical expressions using `mcp` and `
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under MIT License. See [LICENSE](LICENSE) file.
+
+[中文版本](README_CN.md)
