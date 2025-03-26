@@ -12,7 +12,7 @@ def calculate_expression(expression: str) -> str:
     """
 calculate mathematical expressions using the `sympify` function from `sympy`, parse and compute the input mathematical expression string, supports direct calls to SymPy functions (automatically recognizes x, y, z as symbolic variables)
 Parameters:
-    expression (str): Mathematical expression, e.g., "223 - 344 * 6" or "sin(pi/2) + log(10)".
+    expression (str): Mathematical expression, e.g., "223 - 344 * 6" or "sin(pi/2) + log(10)".Replace special symbols with approximate values, e.g., pi → 3.1415"
 Example expressions:
     "2 + 3*5"                          # Basic arithmetic → 17
     "expand((x + 1)**2)"               # Expand → x² + 2x + 1
