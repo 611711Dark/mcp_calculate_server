@@ -1,5 +1,7 @@
 # MCP Calculate Server
 
+[![smithery badge](https://smithery.ai/badge/@611711Dark/mcp_calculate_server)](https://smithery.ai/server/@611711Dark/mcp_calculate_server)
+
 A mathematical calculation service based on MCP protocol and SymPy library, providing powerful symbolic computation capabilities.
 
 ## Key Features
@@ -37,6 +39,14 @@ A mathematical calculation service based on MCP protocol and SymPy library, prov
 ```
 
 ## Installation
+
+### Installing via Smithery
+
+To install Calculate Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@611711Dark/mcp_calculate_server):
+
+```bash
+npx -y @smithery/cli install @611711Dark/mcp_calculate_server --client claude
+```
 
 ### Local Installation
 
