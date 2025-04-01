@@ -45,7 +45,7 @@ A mathematical calculation service based on MCP protocol and SymPy library, prov
 To install Calculate Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@611711Dark/mcp_calculate_server):
 
 ```bash
-npx -y @smithery/cli install @611711Dark/mcp_calculate_server --client claude
+npx -y @smithery/cli install @611711Dark/mcp_sympy_calculate_server --client claude
 ```
 
 ### Local Installation
