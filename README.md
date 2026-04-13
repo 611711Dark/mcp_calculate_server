@@ -88,6 +88,9 @@ Call `calculate_expression` tool via MCP protocol by passing mathematical expres
 - fastapi>=0.95.0
 - uvicorn>=0.21.0
 
+## Acknowledgements
+Thanks to [this blog post](https://skywork.ai/skypage/en/unlocking-ai-math-sympy-calculator/1981544716917862400) for the introduction, and to Stefano for his help and responsible disclosure.
+
 ## License
 
 This project is licensed under MIT License. See [LICENSE](LICENSE) file.
