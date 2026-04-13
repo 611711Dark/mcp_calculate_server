@@ -89,7 +89,7 @@ Call `calculate_expression` tool via MCP protocol by passing mathematical expres
 - uvicorn>=0.21.0
 
 ## Acknowledgements
-Thanks to [this blog post](https://skywork.ai/skypage/en/unlocking-ai-math-sympy-calculator/1981544716917862400) for the introduction, and to Stefano for his help and responsible disclosure.
+Thanks to [this blog post](https://skywork.ai/skypage/en/unlocking-ai-math-sympy-calculator/1981544716917862400) for the introduction, and to [Stefano](https://www.linkedin.com/in/stefano--di-santo/) for his help and responsible disclosure.
 
 ## License
 
